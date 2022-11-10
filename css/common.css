@@ -160,11 +160,6 @@ h2 {
   white-space: nowrap;
 }
 
-h3 {
-  display: block;
-  font-size: 25px;
-  white-space: nowrap;
-}
 /*COMMONT STYLES END*/
 @media (max-width: 1400px) {
   .mycontainer {

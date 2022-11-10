@@ -100,3 +100,16 @@ h1 {
     gap: 5px;
   }
 }
+@media (max-height: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+  .main_photo_text {
+    font-size: 22px;
+  }
+  .main_photo_button {
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+  }
+}
