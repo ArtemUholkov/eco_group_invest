@@ -67,5 +67,5 @@ function myFunction() {
 const logo = document.querySelector('.header_logo');
 console.log(logo);
 
-setInterval(() => logo.classList.add('rotate'), 2000);
-setInterval(() => logo.classList.remove('rotate'), 5000);
+setInterval(() => logo.classList.add('rotate'), 1);
+setInterval(() => logo.classList.remove('rotate'), 4002);
