@@ -4,9 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" href="img/header/eco-group-logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+
     <title>Еко Груп Інвест</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="mycontainer header_container">
+        <div class="logo_wrapper">
+          <img
+            src="/img/header/eco-group-logo-without-text.png"
+            alt="eco group invest logo"
+            class="header_logo"
+          />
+          <img src="/img/header/eco-group-logo-text.png" alt="eco group invest text logo" />
+        </div>
+        <button class="header_button">Замовити дзвінок</button>
+        <ul class="navbar_menu">
+          <li><a class="nav_elem" href="#">Головна</a></li>
+          <li><a class="nav_elem" href="#services">Послуги</a></li>
+          <li><a class="nav_elem" href="#contacts">Контакти</a></li>
+        </ul>
+        <div class="burger">
+          <div class="burger_space" id="burger">
+            <span class="stick"></span>
+            <span class="stick"></span>
+            <span class="stick"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="popup" id="popup">
+      <div class="popup_textblock" id="popupSlide">
+        <ul class="navbar_menu_mobile">
+          <li><a class="nav_elem_mobile" href="#">Головна</a></li>
+          <li><a class="nav_elem_mobile" href="#about_us">Послуги</a></li>
+          <li><a class="nav_elem_mobile" href="#window_wells">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+    <section class="main_photo">
+      <img src="img/main/main_bgimg.png" alt="main background image" class="main_photo_img" />
+      <div class="main_photo_filter"></div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
 </html>
