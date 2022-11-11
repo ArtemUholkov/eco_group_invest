@@ -159,6 +159,14 @@ h2 {
   font-size: 30px;
   white-space: nowrap;
 }
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
 
 /*COMMONT STYLES END*/
 @media (max-width: 1400px) {
