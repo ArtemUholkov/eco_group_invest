@@ -7,6 +7,12 @@
     <link rel="icon" href="img/header/eco-group-logo.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/d28b76815c.js" crossorigin="anonymous"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap"
@@ -38,7 +44,14 @@
           <li class="nav_elem_point"><a class="nav_elem" href="#services">Послуги</a></li>
           <li class="nav_elem_point"><a class="nav_elem" href="#contacts">Контакти</a></li>
         </ul>
-        <button class="header_button">Замовити дзвінок</button>
+        <button
+          class="header_button"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Замовити дзвінок
+        </button>
         <div class="burger">
           <div class="burger_space" id="burger">
             <span class="stick"></span>
@@ -80,11 +93,18 @@
           <span class="main_photo_text"
             >Ми працюємо, для того щоб захистити довкілля та зберегти природні ресурси</span
           >
-          <button class="header_button main_photo_button">Замовити дзвінок</button>
+          <button
+            class="header_button main_photo_button"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </section>
-    <section class="about_us">
+    <section class="about_us" id="about_us">
       <div class="mycontainer about_us_container">
         <h2>Про нас</h2>
         <div class="about_us_content">
@@ -143,6 +163,338 @@
         </div>
       </div>
     </section>
+    <section class="services">
+      <div class="mycontainer services_container">
+        <h2 id="services">Послуги</h2>
+        <div class="services_content">
+          <div class="card mb-3 cards_cont">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/services/paper.png" class="img-fluid rounded-start" alt="paper" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body services_card_body">
+                  <h5 class="card-title services_card_title">Макулатура</h5>
+                  <p class="card-text">
+                    Макулатура Ми здійснюємо прийом макулатури у Львові, ціна - від 5 грн/кг,
+                    визначається в залежності – оптом чи дрібними партіями. Подальша переробка
+                    макулатури дозволяє отримати якісну паперову продукцію, зберегти від вирубки
+                    листяні й хвойні ліси.
+                  </p>
+                  <button
+                    class="header_button services_button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Замовити послугу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cards_cont">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/services/bottles.png"
+                  class="img-fluid rounded-start"
+                  alt="plastic bottles"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body services_card_body">
+                  <h5 class="card-title services_card_title">Пет Пляшки та пластмаса</h5>
+                  <p class="card-text">
+                    У нашому пункті прийому пластику здійснюється закупівля сортування. Звертайтесь
+                    до нас, наші ціни вас прємно здивують. Ми пропонуємо від 10 грн/кг, ціни
+                    залежать від обсягу втрсировини.
+                  </p>
+                  <button
+                    class="header_button services_button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Замовити послугу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cards_cont">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/services/plastic_bags.png"
+                  class="img-fluid rounded-start"
+                  alt="plastic bags"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body services_card_body">
+                  <h5 class="card-title services_card_title">Поліетилен</h5>
+                  <p class="card-text">
+                    Купуємо поліетилен - прозорого кольору, в чистому та сухому стані. Ціна - від 15
+                    грн/кг. Даний поліетилен використовуеться, як правило, для виготовлення різних
+                    пакетів та пакувальної плівки.
+                  </p>
+                  <button
+                    class="header_button services_button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Замовити послугу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cards_cont">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/services/cans.png" class="img-fluid rounded-start" alt="metal cans" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body services_card_body">
+                  <h5 class="card-title services_card_title">Алюміній</h5>
+                  <p class="card-text">
+                    Якщо у вас накопичилися алюмінієві баночки, зверніться до нас, і співробітники
+                    нашої компанії позбавлять вас від турбот, пов’язаних з утилізацією непотрібного
+                    металу. Приймаємо будь-які банки. Ціни - від 15 грн/кг.
+                  </p>
+                  <button
+                    class="header_button services_button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Замовити послугу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cards_cont">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/services/glass.png" class="img-fluid rounded-start" alt="glass" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body services_card_body">
+                  <h5 class="card-title services_card_title">Склобій</h5>
+                  <p class="card-text">
+                    Ви можете здати склобій в нашому пункті прийому склобою у Львові. Ціни від 2
+                    грн/кг, визначається в залежності від обсягів та виду скла. Зі склобою
+                    найчастіше виробляють високопористе піно скло для теплоізоляції.
+                  </p>
+                  <button
+                    class="header_button services_button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Замовити послугу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3 cards_cont">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/services/metal.png"
+                  class="img-fluid rounded-start card_img"
+                  alt="metal"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body services_card_body">
+                  <h5 class="card-title services_card_title">Металобрухт</h5>
+                  <p class="card-text">
+                    Наша компанія не тільки здійснює скупку металобрухту, а й вивозить та утилізує
+                    брухт кольорових та чорних металів. Приймаємо металолом і лом всіх видів та в
+                    будь-якій якості. Ціни: метал - від 3 грн/кг.
+                  </p>
+                  <button
+                    class="header_button services_button"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Замовити послугу
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="mycontainer contacts_container">
+        <h2 class="contacts_title">Контакти</h2>
+        <div class="contacts_content">
+          <div class="phone_mail contacts_phone_mail">
+            <div class="phone">
+              <a class="main_phone_mail" href="tel:+380939644777">
+                <i class="fa fa-phone phone_number_icon contacts_phone_number"></i>
+                <span class="contacts_phone_text">+38 093-96-44-777</span>
+              </a>
+            </div>
+            <div class="mail">
+              <a class="main_phone_mail" href="mailto:ekopolimer@ukr.net">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="contacts_phone_text">ekopolimer@ukr.net</span>
+              </a>
+            </div>
+          </div>
+          <button
+            class="header_button contacts_button"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Замовити дзвінок
+          </button>
+          <div class="contacts_address">
+            <span class="contacts_address_city">м.Львів</span>
+            <span class="contacts_address_street">вул. Шевченка 317</span>
+          </div>
+          <div class="map-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17301.758526675887!2d23.93772474173973!3d49.8627137156796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ade14b7f5ff13%3A0x69864a9fae52a138!2z0LLRg9C70LjRhtGPINCo0LXQstGH0LXQvdC60LAsIDMxNywg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1668160294280!5m2!1suk!2sua"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="links">
+        <ul class="footer_menu">
+          <li class="nav_elem_point"><a class="footer_nav_elem" href="#">Головна</a></li>
+          <li class="nav_elem_point"><a class="footer_nav_elem" href="#about_us">Про нас</a></li>
+          <li class="nav_elem_point"><a class="footer_nav_elem" href="#services">Послуги</a></li>
+          <li class="nav_elem_point"><a class="footer_nav_elem" href="#contacts">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="phone_mail footer_phone_mail">
+        <div class="phone">
+          <a class="main_phone_mail" href="tel:+380939644777">
+            <i class="fa fa-phone phone_number_icon contacts_phone_number"></i>
+            <span class="contacts_phone_text">+38 093-96-44-777</span>
+          </a>
+        </div>
+        <div class="mail">
+          <a class="main_phone_mail" href="mailto:ekopolimer@ukr.net">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="contacts_phone_text">ekopolimer@ukr.net</span>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">Copyright © 2022 Eco Group Invest - All Rights Reserved.</div>
+    </footer>
+    <div class="modal_window">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+              <div class="mb-3">
+                <label for="subject" class="form-label">Ім'я *</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Ім'я"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="extra_email_adress" class="form-label">Email адреса *</label>
+                <input
+                  name="extra_email_adress"
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="extra_phone_number" class="form-label">Номер телефону *</label>
+                <input
+                  type="text"
+                  name="extra_phone_number"
+                  class="form-control"
+                  placeholder="Номер телефону"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Повідомлення *</label>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  name="text"
+                  placeholder="Повідомлення"
+                  required
+                ></textarea>
+              </div>
+
+              <input type="hidden" name="access_token" value="b6ptufawi5qmc6uw1hqngyoz" />
+
+              <input
+                type="hidden"
+                name="success_url"
+                value=".?message=Email+Successfully+Sent%21&isError=0"
+              />
+              <input
+                type="hidden"
+                name="error_url"
+                value=".?message=Email+could+not+be+sent.&isError=1"
+              />
+
+              <input id="submit_form" type="submit" value="Відправити" class="form_button" />
+            </form>
+
+            <script>
+              var submitButton = document.getElementById('submit_form');
+              var form = document.getElementById('email_form');
+              form.addEventListener('submit', function (e) {
+                setTimeout(function () {
+                  submitButton.value = 'Sending...';
+                  submitButton.disabled = true;
+                }, 1);
+                setTimeout(() => {
+                  window.location.href = 'thankyou.html';
+                }, 1000);
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>

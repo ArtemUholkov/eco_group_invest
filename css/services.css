@@ -1,0 +1,132 @@
+.services {
+  width: 100%;
+}
+.services_container {
+  position: relative;
+  top: 750px;
+  margin: 0 auto;
+}
+.services_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards_cont {
+}
+@media (max-width: 1590px) {
+  .services_container {
+    top: 900px;
+  }
+}
+@media (max-width: 1500px) {
+  .services_container {
+    top: 850px;
+  }
+}
+@media (max-width: 1300px) {
+  .services_container {
+    top: 750px;
+  }
+}
+@media (max-width: 1150px) {
+  .services_container {
+    top: 1300px;
+  }
+}
+@media (max-width: 765px) {
+  .services_container {
+    top: 1350px;
+  }
+}
+@media (max-width: 605px) {
+  .services_container {
+    top: 1400px;
+  }
+}
+@media (max-width: 520px) {
+  .services_container {
+    top: 1500px;
+  }
+}
+@media (max-width: 475px) {
+  .services_container {
+    top: 1550px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .services_content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.services_card_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.services_card_title {
+  font-weight: 600;
+}
+.card-text {
+  flex: 1;
+}
+.services_button {
+  margin-top: 10px;
+}
+.card {
+}
+.img-fluid {
+  height: 100%;
+  border-bottom-left-radius: var(--bs-border-radius) !important;
+  border-top-left-radius: var(--bs-border-radius) !important;
+  border-top-right-radius: var(--bs-border-radius) !important;
+  border-bottom-right-radius: var(--bs-border-radius) !important;
+  transition: all 1s;
+}
+.img-fluid:hover {
+  transform: scale(1.05);
+  transition: all 1s;
+}
+.row {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  flex: auto;
+  width: 33.33333333%;
+  overflow: hidden;
+}
+.col-md-8 {
+  flex: auto;
+  width: 66%;
+}
+@media (max-width: 480px) {
+  .row {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .col-md-4 {
+    flex: auto;
+    width: 100%;
+  }
+  .col-md-8 {
+    flex: auto;
+    width: 100%;
+  }
+  .img-fluid {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+}
