@@ -217,7 +217,9 @@
     background-color: gray;
     color: white;
   }
-
+  .phone_in_burger {
+    margin-top: 35px;
+  }
   .popup_textblock.slidein {
     position: relative;
     display: flex;
