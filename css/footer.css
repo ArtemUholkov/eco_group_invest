@@ -39,3 +39,26 @@ footer {
     font-size: 10px;
   }
 }
+.call_button_fixed {
+  height: 60px;
+  width: 60px;
+  background-color: #499100;
+  transition: all 0.5s;
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.bottom_icon {
+  color: white;
+}
+.call_button_fixed:hover {
+  background-color: #769e4e;
+  transition: all 0.5s;
+}
