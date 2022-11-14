@@ -113,3 +113,45 @@ h1 {
     font-size: 18px;
   }
 }
+
+.title_circle {
+  width: 64px;
+  height: 64px;
+  border: #ffffff 2px solid;
+  background-color: #49910093;
+  position: absolute;
+  bottom: 60px;
+  left: calc(50% - 32px);
+  z-index: 55;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.99);
+  cursor: pointer;
+  transition: all 0.5s;
+  z-index: 20;
+}
+.title_circle:hover {
+  background-color: #769e4e;
+  transition: all 0.5s;
+}
+.title_arrow {
+  color: #499100;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-height: 550px) {
+  .title_circle {
+    display: none;
+  }
+
+  .title_arrow {
+    display: none;
+  }
+}

@@ -1,7 +1,6 @@
 .contacts {
   width: 100%;
-  position: relative;
-  top: 750px;
+
   margin-bottom: 50px;
 }
 .contacts_title {
@@ -52,46 +51,8 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 1590px) {
-  .contacts {
-    top: 900px;
-  }
-}
-@media (max-width: 1500px) {
-  .contacts {
-    top: 850px;
-  }
-}
-@media (max-width: 1300px) {
-  .contacts {
-    top: 750px;
-  }
-}
-@media (max-width: 1150px) {
-  .contacts {
-    top: 1300px;
-  }
-}
 @media (max-width: 765px) {
-  .contacts {
-    top: 1350px;
-  }
   .map-responsive {
     padding-bottom: 70%;
-  }
-}
-@media (max-width: 605px) {
-  .contacts {
-    top: 1450px;
-  }
-}
-@media (max-width: 520px) {
-  .contacts {
-    top: 1550px;
-  }
-}
-@media (max-width: 475px) {
-  .contacts {
-    top: 1600px;
   }
 }
